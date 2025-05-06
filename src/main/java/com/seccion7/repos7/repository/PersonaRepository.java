@@ -63,4 +63,13 @@ public class PersonaRepository {
         }
         return null;
     }
+
+    public Persona readbyrut(String rut) {
+        for (Persona p : personas) {
+            if(p.getRut().equals(rut)){
+                return p;
+            }
+        }
+        return null;
+    }
 }
