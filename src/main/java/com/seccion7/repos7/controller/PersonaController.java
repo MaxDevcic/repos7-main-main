@@ -17,11 +17,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
-
-
-
-
-
 @RequestMapping("/api/personas")
 @RestController
 public class PersonaController {
@@ -60,6 +55,5 @@ public class PersonaController {
         return personaService.eliminarPersona(id);
     }
 
-    
     
 }
